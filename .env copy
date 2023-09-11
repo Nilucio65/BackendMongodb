@@ -1,0 +1,2 @@
+MONGOBD_URI = uri de acesso ao banco
+MONGODB_BD = seuDataBase

@@ -3,9 +3,14 @@ import express from 'express'
 const app = express()
 const port = 4000
 
+//import das rotas da aplicação
+import prestadoresRout from './routes/prestador.js'
+
 app.use(express.json())
 
 app.use('/', express.static('public'))
+
+app.use('/api/prestadores', prestadoresRout)
 
 app.use('/api', (req,res) => {
     res.status(200).json({
