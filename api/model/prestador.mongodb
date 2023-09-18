@@ -14,3 +14,19 @@ db.prestadores.insertOne({
     }
 
 )
+
+use('FatecItu')
+db.prestadores.insertOne({
+    "cnpj":"154943224658",
+    "razao_social": "Maria",
+    "cnae_fiscal": 45842,
+    "nome_fantasia": "JOSUÉ BOY",
+    "data_inicio_atividade": "2020-08-01",
+    "localização":
+    {
+        "type": "point",
+        "coordinates":[-43.2904, -67.54842]
+    }
+    }
+
+)

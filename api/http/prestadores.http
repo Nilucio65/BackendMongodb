@@ -1,0 +1,58 @@
+//teste dos requisições do REST dos prestadores
+@baseURL = http://localhost:4000/api/prestadores
+
+GET {{baseURL}}
+Content-Type: aplication/json
+
+###
+GET {{baseURL}}/650852dece6ce1290e5f6b7a
+Content-Type: aplication/json
+
+###
+DELETE {{baseURL}}/650852dece6ce1290e5f6b7a
+Content-Type: aplication/json
+
+###
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+
+    "cnpj": "13254635166123",
+    "razao_social": "Strogonoff Açucarado",
+    "cnae_fiscal": 451510,
+    "nome_fantasia": "JOSUÉ BOY",
+    "data_inicio_atividade": "2020-08-01",
+    "localizacao": {
+
+        "type": "Point",
+
+        "coordinates":[-23.2904, -47.2963]
+
+    }
+
+}
+
+###
+PUT {{baseURL}}
+Content-Type: application/json
+
+ 
+
+{
+
+    "_id": "650864e90d4339db744e6ba3",
+    "cnpj": "13254635164161",
+    "razao_social": "Rodrigo alterado",
+    "cnae_fiscal": 451510,
+    "nome_fantasia": "JOSUÉ BOY",
+    "data_inicio_atividade": "2020-08-01",
+    "localizacao": {
+
+      "type": "Point",
+
+      "coordinates": [-23.2904, -47.2963]
+
+    }
+
+  }
